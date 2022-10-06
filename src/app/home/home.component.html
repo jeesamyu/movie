@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+<!-- method 1 -->
+
+<h1>{{ 34 | currency:'EUR' }}</h1>
+
+
+<div class="container" style="height:400px; width:200px; background:green;">
+  <input type="radio"  name="button1"  (click)="first()">On &nbsp;
+<input type="radio"  name="button1"  (click)="second()">Off
+<img *ngIf="image1" src="../../assets/switch-on.png" style="transition-duration:2s;">
+<img *ngIf="image2" src="../../assets/switch-off.png">
+</div>
+
+<input type="">
+
+<section>
+  <p>hdhs</p>
+  <a href="#">link</a>
+</section>
+
+
+
+<h1>{{ hello | uppercase }}</h1>
+<h1>{{ hello | lowercase }}</h1>
+<h1>{{ hello | date:'y/m/d' }}</h1>
+
+
+
+
+<!-- method 2 -->
+
+<!-- <input type="radio"  name="button1" #on (click)="first()">On &nbsp;
+<input type="radio"  name="button1" #off (click)="second()">Off
+
+<div class="container">
+<img *ngIf="image1 === ! 'off';" src="../../assets/switch-on.png">
+<img *ngIf="image2 === ! 'on' " src="../../assets/switch-off.png">
+</div> -->
+
+<p>asdaafaf <!--dsfsdfdsfsf--> </p>
+
+
+
+<br><br>
+<div>
+  
+</div>
+
+
+
+
+<div class="container col-sm-12">
+  
+  <input type="radio" name="colors" id="black"  [ngClass]="a1">black
+  <input type="radio" name="colors" id="blue"   [ngClass]="a2">blue
+  <input type="radio" name="colors" id="green"  [ngClass]="a3">green
+  <input type="radio" name="colors" id="yellow" [ngClass]="a4">yellow
+
+  <div class="col-sm-3" style="border:1px solid black;" id="c1" >black </div>
+  <div class="col-sm-3" style="border:1px solid black;" id="c2" >blue  </div>
+  <div class="col-sm-3" style="border:1px solid black;" id="c3" >green </div>
+  <div class="col-sm-3" style="border:1px solid black;" id="c4" >yellow</div>
+  
+</div>
+
+
+<div class="container"></div>
+
+
+
+
+
+
+
+
+
+   
+
+    <!-- <div [ngClass]="isSpecial ? 'special' : ''">this is special</div>
+
+    <div [ngStyle]="currentClasses">ddsvsdvsvsv</div>
+
+    <button (click)="setCurrentClasses()">click</button> -->
+
+
+    <!-- <div [ngStyle]="style1">ngStyles properties</div> -->
+
+
+  <!-- <table>
+      <tr>
+        <th>ID</th> &nbsp;
+        <th>NAME</th>
+      </tr>
+      <tr *ngFor="let table of tables">
+        <td>{{table.id}}</td>&nbsp;
+        <td>{{table.name}}</td>
+      </tr>
+  </table> -->
+
+
+<!-- <h1><em>hello Mf</em></h1>
+<map>hello</map>
+
+<img src="https://mdoors.in/assets/images/slider/1.jpg" usemap="#doors">
+
+<map name="doors">
+<area shape="rect" coords="77,72,267,507" href="https://www.w3schools.com/html/html_images_imagemap.asp">
+<area shape="rect" coords="297,74,486,501" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2">
+</map>
+
+
+<div [ngClass]=" color1 "><h1>ngclass</h1></div>
+
+<button (click)="getcolor()">click</button>
+
+<button class="btn btn-primary" [ngClass]=" {'btn':true, 'btn-primary':true} ">click me</button>
+
+<button   (click)="togglestate()">click here</button>
+<button [ngClass]="calculatclass()" (click)="submit()">its button</button> -->
+      
+<!-- ngIf -->
+
+
+<!-- hidden -->
+<!-- <div [hidden]="name.name.length == 0">there is a name</div>
+<div [hidden]="name.name.length > 0">there are no name</div> -->
+
+<!-- ngSwitchCase -->
+
+<ul class="nav nav-pills">
+    <li [class.active]="viewofthepage == 'grid' " ><input type="radio" name="one" (click)="viewofthepage= 'grid' ">grid view</li>
+    <li [class.active]="viewofthepage == 'list' " ><input type="radio" name="one" (click)="viewofthepage = 'list' ">list view</li>
+</ul>
+
+<div [ngSwitch]="viewofthepage" class="col-sm-12">
+    <div *ngSwitchDefault  class=" col-sm-6" style="border:1px solid black;">grid view content</div>
+    <div  *ngSwitchCase=" 'grid' " class=" col-sm-6" style="border:1px solid black;  background-color:green; color: aliceblue;">grid view content</div>
+    <div >no view</div>
+</div>
+<!-- <button (click)="onAdd()">add new</button>
+<ul>
+<li *ngFor="let table of tables; even as isEven">
+      {{table.name}} <span *ngIf="isEven">1</span> -->
+      <!-- <button (click)="onRemove(table)">remove</button> -->
+      <!-- <button (click)="change(table)">change</button>
+</li>
+</ul> -->
+<!-- <button (click)="loginlogout()">Login</button>
+<button (click)="logout()">Log out</button>
+
+<ng-container *ngIf="Loggin; then Loggins; else Logouts"></ng-container>
+
+<ng-template #Loggins><h1>arumai da</h1></ng-template>
+<ng-template #Logouts><h1>**tha veliya poda ***lu</h1></ng-template> -->
+
+<ng-container>
+  <div class="container">
+    <input type="radio" *ngIf="check ? yes : no ">blue
+    <ng-template #no><h1>go</h1></ng-template>
+  <ng-template #yes><h1>hello</h1></ng-template></div>
+</ng-container>
+
+
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'CONTAINER_ID':true});</script>
+<!-- <table>
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+</tr>
+<tr *ngFor="let table of tables;let even = even;let odd = odd;" [ngClass]="{even1:get, odd1:odd}">
+    <td>{{table.id}}</td>
+    <ng-template #get>sdasuodhauosdhsaoidaoidasd</ng-template>
+    <td >{{table.name}}</td>
+</tr>
+</table> -->
+<!--
+<ul *ngFor="let content of nested;">
+    <li>{{content.type}}</li>
+    <li>{{content.type2}}</li>
+
+<ul *ngFor="let content1 of content.collections">
+    <li>{{content1.no}}</li>
+    <li>{{content1.no1}}</li>
+</ul>
+
+</ul>
+
+<div [ngClass]="isSpecial ? 'special' : 'this is special'">This div is special</div>
+
+
+
+<div [ngStyle]="currentStyles">
+    This div is initially italic, normal weight, and extra large (24px).
+  </div> -->
+
+
+
+<!-- <div>
+  pick you hero
+  (<label><input type="checkbox" checked (change)="showSad =!showSad ">Show Sad</label>)
+
+</div>
+
+<select [(ngModel)]="hero">
+  <ng-container *ngFor="let h of hero">
+  <ng-container *ngIf="showSad || h.emotion !== 'sad' ">
+    <option [ngValue]="h">{{h.name}} {{h.emotion}}</option>
+  </ng-container>
+  </ng-container>
+</select><br>
+
+
+
+<label for="example-ngModel">[(ngModel)]:</label>
+<input [(ngModel)]="currentItem.name" id="example-ngModel" #as><br><br>
+
+<p>
+  <label for="without">without NgModel:</label>
+  <input [value]="currentItem.name" (input)="currentItem.name=getValue($event)" id="without">
+</p><br><br><br> -->
+
+<!-- 
+<input (input)="valueget($event)" id="a1" #hell>
+<div [(ngModel)]="hell"></div> -->
+
+<!-- <form #hello="ngForm" (ngSubmit)="save(hello)">
+  <div class="form-group">
+    <label>gender</label>
+    <div class="form-control">
+    <label class="inline-radio"><input type="radio" name="gender" value="male" ngModel>&nbsp;Male</label><br>
+    
+      <label class="inline-radio"><input type="radio" name="gender" value="Female" ngModel>&nbsp;Female</label>
+   
+   <input type="text" name="name" id="fullname" ngModel>
+    </div>
+  </div>
+  <button class="btn btn-primary">click</button>
+</form>
+<div>{{hello.value | json}}</div>
+ -->
+<div class="container row">
+<div class="that" style="margin-left:200px;"></div>
+<div class="this"> asdhald asddlaid dacdkcndkc dscksd cksd cdskc dskc dscdslckndskc dscdsc dkc dckdckw ecwkecnoiew cdkcnweicewc </div>
+<div class="those"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>

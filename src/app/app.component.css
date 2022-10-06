@@ -1,0 +1,39 @@
+article{
+    width: clamp(500px,100%,700px);
+}
+
+.drop{
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 2s);
+    width: 500px;
+    height: 60px;
+}
+
+div:nth-child(1){
+    /* animation-delay: 1s; */
+    --order:1;
+}
+div:nth-child(2){
+    /* animation-delay: 2s; */
+    --order:2;
+
+}
+div:nth-child(3){
+    /* animation-delay: 3s; */
+    --order:3;
+
+}
+div:nth-child(4){
+    /* animation-delay: 4s; */
+    --order:4;
+
+}
+
+@keyframes dropIn {
+    from{
+        transform: translateY(-1000px) !important;
+    }
+    to{
+        transform: translateY(500px);
+    }
+}

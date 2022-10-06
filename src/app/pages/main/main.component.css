@@ -1,0 +1,33 @@
+body{
+    margin: -8px;
+}
+.layout-box{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    overflow: hidden;
+}
+
+.layout-box .page-content{
+    flex-grow: 1;
+    
+}
+
+.top-bar{
+    background-color: var(--dark) ;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    height:68px;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: black;
+    font-family: serif;
+}
+h1:hover{
+    box-shadow: 0 0 10px 0 black;
+    font-size: 33px;
+    border-radius: 10px;
+}

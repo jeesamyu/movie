@@ -1,0 +1,117 @@
+<!-- <form>
+  <input type="text"  [formControl]="email" ngmodel #helo="ngForm" #t required>
+  <p  *ngIf=" email.errors?.['maxlength'] ">max reached</p>
+  <p  *ngIf=" email.errors?.['minlength'] ">min length is required</p>
+  <p  *ngIf=" email.touched ">email is needed</p>
+  <button (click)="sumbit()" [disabled]="helo.form.invalid" >submit</button>
+  <button (click)="t.value='' ">reset</button>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+<body>
+  <div class="total">
+    <h2>Register Form</h2>
+    <form  #thist="ngForm" class="form-group">
+
+      <div  class="form-group">
+      <label>Name :</label><br>
+      <input [formControl]="name" type="text" #a2 > 
+      <div *ngIf=" name.touched && !name.valid" name="same" class="alert" >Name is required</div>
+      <!-- <div *ngIf=" name.errors?.['minlength'] " name="same" >Min length is needed</div> -->
+    </div>
+
+    <div class="form-group">
+      <label>Phone :</label><br>
+      <input type="number" #a3 #q ngmodel><br>
+    </div>
+
+      <div class="form-group">
+      <label>Address :</label><br>
+      <input type="text" #a4 #q ngmodel><br>
+    </div>
+    
+      <div class="form-group">
+      <label>Email :</label><br>
+      <input type="email" #a5 #q ngmodel><br>
+    </div>
+
+      <div class="form-group">
+      <label>Password :</label><br>
+      <input type="password" #a6 #q ngmodel>
+    </div><br>
+      <button type="submit" name="fe"  #sub >Submit</button>
+      <button type="reset" style="margin-top:10px; background:rgb(255, 81, 81); ">Reset</button>
+    </form>
+  </div>
+
+<!-- <div id="mov" #h>
+  <p>{{ a2.value }}</p>
+  <p>{{ a3.value }}</p>
+  <p>{{ a4.value }}</p>
+  <p>{{ a5.value }}</p>
+  <p>{{ a6.value }}</p>
+</div> -->
+
+
+</body>
+<!-- 
+
+<form>
+  <div class="form-group">
+    <label>Enter Name :</label>
+    <input ngModel required #errors="ngModel" name="errors" type="text">
+    <div  *ngIf=" errors.touched && !errors.valid ">name required</div>
+  </div>
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>{{ helo.value }}</h1>
+
+<form #lot="ngForm" (ngSubmit)="onSubmit(lot)"> 
+<input name="cor" type="email" #thist ngmodel required>
+<input type="text" #thist1 ngmodel/>
+<input type="text" #thist2 ngmodel/>
+<button >click</button>
+<button type="reset">reset</button>
+<p>{{ thist.value }}</p>
+<p>{{ thist1.value }}</p>
+<p>{{ thist2.value }}</p>
+</form>
+
+ <img alt="yes" [src]="getimage"> -->
+<tr><td [colSpan]="10 + 1" >hello</td></tr>
+
+
+<!-- <form #thisw1="ngForm"  ngsubmit>
+  <input type="number" #thisw ngmodel><p>{{value}}</p>
+  <button [ngClass]="submit(value)">click</button>
+  <p>{{thisw.value}}</p>
+</form>
+
+<div  [ngClass]=" colors " >hello ggd</div>  -->

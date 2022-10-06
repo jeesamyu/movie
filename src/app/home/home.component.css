@@ -1,0 +1,97 @@
+ul li a {
+    padding: 10px;
+    cursor: pointer;
+}
+ul li a:active{
+    background-color: green;
+}
+
+section{
+    color: red;
+}
+
+span{
+    background-color: aqua;
+}
+.even1{
+    color:green;
+}
+.odd1{
+    color:orange;
+}
+
+.special{
+    color: red;
+}
+.style1{
+    font-size:30px;
+}
+.color2{
+    background-color: black;
+    color: white;
+}
+
+.color{
+    color: green;
+}
+
+#black[type=radio]:checked ~ #c1 {
+    background-color:black;
+    color: white;
+}
+
+#blue[type=radio]:checked ~ #c2 {
+    background-color: blue;
+    color: white;
+}
+
+#green[type=radio]:checked ~ #c3 {
+    background-color: green;
+    color: black;
+}
+
+#yellow[type=radio]:checked ~ #c4 {
+    background-color: yellow;
+    color: black;
+}
+
+
+.container1{
+    display:row;
+}
+
+
+.that{
+    height: 200px;
+    width: 200px;
+    background:rgb(89, 255, 0);
+}
+
+.those{
+    height: 200px;
+    width: 200px;
+    background:rgb(4, 0, 255);
+}
+
+
+.this{
+    height: 200px;
+    width: 200px;
+    background:orange;
+    transition: width;
+    transition-duration:0.5s;
+
+    
+}
+
+.this:hover{
+    width: 400px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+

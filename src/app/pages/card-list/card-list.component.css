@@ -1,0 +1,47 @@
+
+html,body{
+    background-color: rgb(255, 218, 108);
+    height:100vh;
+    width: 100%;
+    margin:-8px;
+    padding: 0%;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.total{
+    background:rgb(255, 191, 29);
+    height:auto;
+    box-shadow:5px 0px 10px 0 black;
+}
+label{
+    width:100px;
+    display: inline-block;
+    line-height: 2;
+}
+form{
+    padding:50px;
+    
+}
+button{
+    align-items: center;
+    width: 100%;
+    background-color: green;
+    border: none;
+    padding:5px;
+    border-radius:5px;
+}
+
+h2{
+    text-align: center;
+}
+#mov{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.alert{
+    background-color: rgb(255, 133, 133);
+    border-left-color:10px solid red;
+}
